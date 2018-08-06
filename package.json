@@ -1,0 +1,48 @@
+{
+  "name": "fs-mkdir-p",
+  "version": "1.0.0",
+  "description": "Creates nested directories like `mkdir -p`",
+  "license": "MIT",
+  "author": {
+    "name": "Andrew Musgrave",
+    "email": "andrewdmusgrave@gmail.com",
+    "url": "https://github.com/AndrewMusgrave"
+  },
+  "repository": "AndrewMusgrave/fs-mkdir-p",
+  "scripts": {
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "files": [
+    "index.js"
+  ],
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
+  },
+  "devDependencies": {
+    "jest": "^23.4.2",
+    "readdir-sync-recursive": "^1.0.0",
+    "rimraf": "^2.6.2"
+  },
+  "keywords": [
+    "dir",
+    "directory",
+    "mkdir",
+    "mkdirp",
+    "-p",
+    "mkdir -p",
+    "mkdirp",
+    "fs-mkdir",
+    "fs-mkdirp",    
+    "nested",
+    "nested-mkdir",  
+    "nested-mkdir-sync",
+    "folder",
+    "sync",
+    "fs",
+    "node"
+  ]
+}
