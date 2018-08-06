@@ -1,24 +1,24 @@
-# mkdirp
+# mkdirpSync
 
 Creates nested directories like `mkdir -p`
 
 ## Install
 
 ```bash
-npm install fs-mkdir-p
+npm install fs-mkdirp-sync
 ```
 
 ## Usage
 
 ```js
 // directory path
-const mkdirp = require("fs-mkdir-p");
-mkdirp("src\\components\\Modal\\tests");
+const mkdirpSync = require("fs-mkdirp-sync");
+mkdirpSync("src\\components\\Modal\\tests");
 ```
 
 ## API
 
-### mkdirp(dir)
+### mkdirpSync(dir)
 
 | Param | Type   | Default | Description        |
 | ----- | ------ | ------- | ------------------ |

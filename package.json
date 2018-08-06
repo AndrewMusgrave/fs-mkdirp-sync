@@ -1,5 +1,5 @@
 {
-  "name": "fs-mkdir-p",
+  "name": "fs-mkdirp-sync",
   "version": "1.0.0",
   "description": "Creates nested directories like `mkdir -p`",
   "license": "MIT",

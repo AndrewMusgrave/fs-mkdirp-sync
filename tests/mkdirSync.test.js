@@ -1,14 +1,14 @@
 const readdirSync = require('readdir-sync-recursive');
 const rimraf = require('rimraf');
-const mkdirSync = require('../');
+const mkdirpSync = require('../');
 
-describe('mkdirSync', () => {
+describe('mkdirpSync', () => {
   afterEach(() => {
     rimraf.sync('tests\\a');
   });
 
   it('will create all the directories', () => {
-    mkdirSync('tests\\a\\b\\c\\d');
+    mkdirpSync('tests\\a\\b\\c\\d');
     const dirs = readdirSync('tests');
     expect(dirs).toEqual([
       'tests\\a',
@@ -19,10 +19,10 @@ describe('mkdirSync', () => {
   });
 
   it('will not crash when the argument is undefined', () => {
-    expect(() => mkdirSync()).not.toThrow();
+    expect(() => mkdirpSync()).not.toThrow();
   })
 
   it('will not crash when the argument is null', () => {
-    expect(() => mkdirSync(null)).not.toThrow();
+    expect(() => mkdirpSync(null)).not.toThrow();
   })
 });

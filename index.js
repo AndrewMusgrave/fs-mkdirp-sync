@@ -1,9 +1,9 @@
-const {mkdirSync: fsMkdirSync} = require('fs');
+const {mkdirSync} = require('fs');
 const {sep, join} = require('path');
 
 const mkdir = (dir) => {
   try {
-    fsMkdirSync(dir);
+    mkdirSync(dir);
   } catch (error) {
     if (error.code !== 'EEXIST') {
       throw error;
@@ -11,7 +11,7 @@ const mkdir = (dir) => {
   }
 };
 
-const mkdirSync = (dir) => {
+const mkdirpSync = (dir) => {
   if (typeof dir !== 'string') {
     return;
   }
@@ -23,4 +23,4 @@ const mkdirSync = (dir) => {
   }
 }
 
-module.exports = mkdirSync;
+module.exports = mkdirpSync;
